@@ -1,0 +1,25 @@
+# Build directories
+dist
+build
+.next
+
+# Dependencies
+node_modules
+.pnpm-store
+
+# Lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Environmental variables
+.env
+.env.*
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.git
+.cache
