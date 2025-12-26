@@ -1,7 +1,3 @@
 export const Stacks = () => {
-  return (
-    <section id="stack">
-    </section>
-  ) 
-}
-
+  return <section id="stack"></section>;
+};
