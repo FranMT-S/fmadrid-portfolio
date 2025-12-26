@@ -5,6 +5,7 @@ build
 
 # Dependencies
 node_modules
+.pnpm-store
 
 # Lock files
 package-lock.json
@@ -19,3 +20,6 @@ pnpm-lock.yaml
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+.git
+.cache

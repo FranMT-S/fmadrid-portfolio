@@ -27,8 +27,8 @@ export const Contact = () => {
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="mb-4 text-3xl font-bold">Get In Touch</h2>
         <p className="mb-8 text-zinc-600 dark:text-zinc-400">
-          I'm currently looking for new opportunities. Whether you have a question or just want to
-          say hi, I'll get back to you as soon as possible!
+          I’m currently looking for new opportunities. Whether you have a question or just want to
+          say hi, I’ll get back to you as soon as possible!
         </p>
         <a
           href="mailto:your.email@example.com"

@@ -7,10 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "preinstall": "node preinstall.js",
     "test": "vitest",
     "test:ui": "vitest --ui --api.port=4000",
-    "test:watch": "vitest --watch"
+    "test:watch": "vitest --watch",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
     "next": "^16.0.10",
@@ -29,6 +30,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.0.7",
     "jsdom": "^27.3.0",
+    "prettier": "^3.7.4",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "tailwindcss": "^4",
     "typescript": "^5",

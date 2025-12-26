@@ -12,7 +12,7 @@ export const Profile = () => {
             data-testid="profile-title"
             className="font-title text-primary pb-0 text-[2rem] font-bold md:text-5xl"
           >
-            Hi, I'm Francisco Madrid
+            Hi, I’m Francisco Madrid
           </h1>
           <h2
             data-testid="profile-subtitle"

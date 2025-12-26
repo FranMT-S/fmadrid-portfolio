@@ -19,7 +19,7 @@ describe('Profile component', () => {
 
   it('CTA must be existt', () => {
     render(<Profile />);
-    const profileTitle = screen.getByTestId('profile-cta-job');
+    const profileTitle = screen.getByTestId('profile-cta-jobs');
     expect(profileTitle).toBeTruthy();
   });
 });
