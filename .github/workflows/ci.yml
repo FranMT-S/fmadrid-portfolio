@@ -1,38 +1,29 @@
-name: CI Check Code and Testing
-on:
-  push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - master
-
 jobs:
-  # Job 1: Check code quality
-  quality:
+  build-and-check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
-        with:
-          version: 10.19.0
-      - uses: actions/setup-node@v4
-        with:
-          cache: 'pnpm'
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm exec prettier --check .
-      - run: pnpm run lint
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-  # Job 2: Run tests (Runs at the same time as Quality)
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
         with:
           version: 10.19.0
-      - uses: actions/setup-node@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
+          node-version: 20
           cache: 'pnpm'
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm test
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Check formatting (Prettier)
+        run: pnpm exec prettier --check .
+
+      - name: Lint code (ESLint)
+        run: pnpm run lint
+
+      - name: Run tests (Vitest)
+        run: pnpm test
