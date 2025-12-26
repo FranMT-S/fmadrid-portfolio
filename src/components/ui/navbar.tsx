@@ -1,3 +1,5 @@
+import { ThemeButton } from './theme/themeButton';
+
 export const Navbar = () => {
   const navItems = [
     { name: 'Profile', href: '#profile' },
@@ -8,13 +10,16 @@ export const Navbar = () => {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-zinc-200 bg-white/80 backdrop-blur-sm dark:border-zinc-800 dark:bg-zinc-950/80">
-        <div className="container mx-auto px-4 py-4">
-          <nav className="flex items-center justify-between">
-            <a href="#" className="text-xl font-bold">FMADRID</a>
-            <div className="hidden md:flex items-center space-x-8">
+      <div className="px-6 py-4 md:px-16">
+        <nav className="flex items-center justify-between">
+          <a href="#" className="text-xl font-bold">
+            FMADRID
+          </a>
+          <div className="items-center space-x-8 md:flex">
+            <div className="hidden items-center space-x-8 md:flex">
               {navItems.map((item) => (
                 <a
-                  key={item.href}
+                  key={item.name}
                   href={item.href}
                   className="text-sm font-medium text-zinc-600 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
                 >
@@ -39,8 +44,10 @@ export const Navbar = () => {
                 <line x1="4" x2="20" y1="18" y2="18" />
               </svg>
             </button>
-          </nav>
-        </div>
-      </header>
-  )
-}
+            <ThemeButton />
+          </div>
+        </nav>
+      </div>
+    </header>
+  );
+};

@@ -5,5 +5,5 @@ export const Footer = () => {
         <p>© {new Date().getFullYear()} FMADRID. All rights reserved.</p>
       </div>
     </footer>
-  )
-}
+  );
+};
