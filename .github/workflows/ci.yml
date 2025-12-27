@@ -36,3 +36,9 @@ jobs:
 
       - name: Run tests (Vitest)
         run: pnpm test
+
+      - name: Run typescript check
+        run: pnpm typecheck
+
+      - name: check build
+        run: pnpm build
