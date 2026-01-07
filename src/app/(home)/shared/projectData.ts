@@ -3,7 +3,8 @@ import { Project } from '@/interfaces/project';
 export const featuredProjects: Project[] = [
   {
     title: 'StockApp',
-    description: 'Stock market analysis app',
+    description:
+      'StockApp lets users explore stock market data and perform technical analysis. It integrates the Gemini API to deliver personalized investment insights and short-term stock price predictions up to one week ahead.',
     link: '',
     images: [
       'https://res.cloudinary.com/duwlysed4/image/upload/v1767668302/portfolio/StockApp_01_vkfrnh.png',
@@ -19,7 +20,8 @@ export const featuredProjects: Project[] = [
   },
   {
     title: 'Job Finder',
-    description: 'Job search app',
+    description:
+      'Job Finder helps users discover job opportunities that match their skills and experience by using web scraping techniques to gather listings from multiple sources.',
     link: '',
     images: [
       'https://res.cloudinary.com/duwlysed4/image/upload/v1767668301/portfolio/JobFinder_01.0_qhzerm.png',
