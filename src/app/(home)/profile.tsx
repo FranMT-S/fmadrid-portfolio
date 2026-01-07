@@ -4,7 +4,7 @@ export const Profile = () => {
   return (
     <section
       id="profile"
-      className="flex min-h-screen flex-col-reverse items-center justify-end lg:flex-row lg:justify-center"
+      className="flex min-h-screen flex-col-reverse items-center justify-end py-4 lg:flex-row lg:justify-center"
     >
       <div className="mx-auto flex max-w-4xl flex-col gap-12 text-left">
         <section>
