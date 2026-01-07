@@ -5,6 +5,8 @@
   --background: #ffffff;
   --foreground: #171717;
   --text-primary: #6e07f3;
+  --text-subtitle: #52525c;
+  --logo-color: #6e07f3;
 }
 
 /* Colors Dark */
@@ -12,6 +14,8 @@
   --background: #171717;
   --foreground: #ffffff;
   --text-primary: #15b638;
+  --text-subtitle: #9f9fa9;
+  --logo-color: #15b638;
 }
 
 body {
@@ -38,9 +42,12 @@ body {
 }
 
 @theme {
+  --breakpoint-mobile: 360px;
+  --breakpoint-tablet: 480px;
   --font-title: var(--font-title);
   --font-subtitle: var(--font-subtitle);
   --font-text: var(--font-text);
+  --color-subtitle: var(--text-subtitle);
 }
 
 @theme inline {

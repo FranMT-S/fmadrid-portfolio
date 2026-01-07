@@ -20,10 +20,12 @@ export const Projects = () => {
     };
 
     return (
-      <div className="border-t-2 border-zinc-200 p-8">
+      <div className="border-zinc-200 p-8">
         <div className="mx-auto max-w-7xl">
-          <div className="mb-16">
-            <h2 className="text-primary font-title mb-4 text-7xl font-black">My Projects</h2>
+          <div className="">
+            <h2 className="text-primary font-title mb-4 text-3xl font-black md:text-5xl">
+              My Projects
+            </h2>
           </div>
 
           <div className="grid grid-flow-row-dense grid-cols-12 gap-3">
@@ -47,7 +49,7 @@ export const Projects = () => {
   };
 
   return (
-    <section id="projects" className="">
+    <section id="projects" className="pt-8">
       <BentoStyle projects={featuredProjects} />
     </section>
   );
