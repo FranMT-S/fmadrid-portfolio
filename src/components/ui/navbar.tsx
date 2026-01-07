@@ -3,7 +3,7 @@ import { ThemeButton } from './theme/themeButton';
 export const Navbar = () => {
   const navItems = [
     { name: 'Profile', href: '#profile' },
-    // { name: 'Projects', href: '#projects' },
+    { name: 'Projects', href: '#projects' },
     // { name: 'Stack', href: '#stack' },
     { name: 'Contact', href: '#contact' },
   ];
