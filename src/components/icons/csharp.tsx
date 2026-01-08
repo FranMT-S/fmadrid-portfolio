@@ -2,8 +2,8 @@ import { SVGProps } from 'react';
 
 export const CsharpIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 32 32" {...props} fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+    <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
     <g id="SVGRepo_iconCarrier">
       {' '}
       <path
@@ -23,8 +23,8 @@ export const CsharpIcon = (props: SVGProps<SVGSVGElement>) => (
         fill="white"
       ></path>{' '}
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M25.0001 13V13.9974H22.9999V13H22.0001V13.9974H21V15H22.0001V16.9948H21V18H22.0001V19H22.9999L23 18H25.0001V19H25.9999V18H27V17H25.9999V15H27V13.9974H25.9999V13H25.0001ZM25.0001 17V15H22.9999V16.9948L25.0001 17Z"
         fill="white"
       ></path>{' '}

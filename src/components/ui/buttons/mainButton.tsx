@@ -1,22 +1,24 @@
+import { twMerge } from 'tailwind-merge';
+
 interface PrimaryButtonProps {
-  text: string;
+  text?: string;
   className?: string;
   href?: string;
   onClick?: () => void;
   style?: React.CSSProperties;
-  starIcon?: React.ReactNode;
+  startIcon?: React.ReactNode;
   endIcon?: React.ReactNode;
   target?: string;
   rel?: string;
 }
 
 export const PrimaryButton: React.FC<PrimaryButtonProps> = ({
-  text,
+  text = '',
   className = '',
   href = undefined,
   onClick,
   style,
-  starIcon,
+  startIcon,
   endIcon,
   target = '_blank',
   rel = 'noopener noreferrer',
@@ -29,10 +31,13 @@ export const PrimaryButton: React.FC<PrimaryButtonProps> = ({
       rel={rel}
       onClick={onClick}
       style={style}
-      className={`border-primary hover:bg-primary text-primary flex items-center rounded-lg border px-6 py-3 font-medium transition-all duration-200 hover:scale-105 hover:text-white hover:opacity-90 ${className}`}
+      className={twMerge(
+        'border-primary hover:bg-primary text-primary flex items-center rounded-lg border px-6 py-3 font-medium transition-all duration-200 hover:scale-105 hover:text-white hover:opacity-90',
+        className,
+      )}
     >
-      {starIcon && <span className="mr-2">{starIcon}</span>}
-      {text}
+      {startIcon && <span className="mr-2">{startIcon}</span>}
+      {text && <span>{text}</span>}
       {endIcon && <span className="ml-2">{endIcon}</span>}
     </a>
   );

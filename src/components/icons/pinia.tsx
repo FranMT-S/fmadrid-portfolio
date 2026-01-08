@@ -83,8 +83,8 @@ export const PiniaIcon = (props: SVGProps<SVGSVGElement>) => (
         y2="819.057"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#52ce63"></stop>
-        <stop offset="1" stop-color="#51a256"></stop>
+        <stop stopColor="#52ce63"></stop>
+        <stop offset="1" stopColor="#51a256"></stop>
       </linearGradient>
       <linearGradient
         id="b"
@@ -94,8 +94,8 @@ export const PiniaIcon = (props: SVGProps<SVGSVGElement>) => (
         y2="1324.95"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#52ce63"></stop>
-        <stop offset="1" stop-color="#51a256"></stop>
+        <stop stopColor="#52ce63"></stop>
+        <stop offset="1" stopColor="#51a256"></stop>
       </linearGradient>
       <linearGradient
         id="c"
@@ -105,8 +105,8 @@ export const PiniaIcon = (props: SVGProps<SVGSVGElement>) => (
         y2="2579.44"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#8ae99c"></stop>
-        <stop offset="1" stop-color="#52ce63"></stop>
+        <stop stopColor="#8ae99c"></stop>
+        <stop offset="1" stopColor="#52ce63"></stop>
       </linearGradient>
       <linearGradient
         id="d"
@@ -116,8 +116,8 @@ export const PiniaIcon = (props: SVGProps<SVGSVGElement>) => (
         y2="6509"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#ffe56c"></stop>
-        <stop offset="1" stop-color="#ffc63a"></stop>
+        <stop stopColor="#ffe56c"></stop>
+        <stop offset="1" stopColor="#ffc63a"></stop>
       </linearGradient>
     </defs>
   </svg>

@@ -3,7 +3,7 @@
 import { Project } from '@/interfaces/project';
 import { ProjectCard } from '@/components/ui/projectsCard';
 import { MouseEvent, useState } from 'react';
-import { featuredProjects } from './shared/projectData';
+import { featuredProjects } from '../../shared/projectData';
 
 export const Projects = () => {
   // Section: Bento Style to display projects in a grid layout

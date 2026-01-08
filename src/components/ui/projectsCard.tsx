@@ -1,11 +1,12 @@
 'use client';
 
-import { Github, Play, ArrowRight } from 'lucide-react';
+import { Play } from 'lucide-react';
 import { MouseEvent, useState } from 'react';
 import { Project } from '@/interfaces/project';
 import { Gallery } from './gallery';
 import PrimaryButton from './buttons/mainButton';
 import { VideoModal } from './videoplayer';
+import { GitHubIcon } from '../icons';
 
 interface ProjectCardProps {
   project: Project;
@@ -86,7 +87,7 @@ const ButtonsSection = ({ project }: { project: Project }) => (
     {project.repository && (
       <PrimaryButton
         className="flex items-center border-gray-500! bg-transparent/80 text-black! hover:border-white/20! hover:bg-black! hover:text-white! dark:text-white!"
-        endIcon={<Github size={16} />}
+        endIcon={<GitHubIcon className="h-6 w-6" />}
         text="Code"
         href={project.repository}
       />

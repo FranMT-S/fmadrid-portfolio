@@ -1,6 +1,6 @@
 'use client';
 
-import { coreSkills, skills } from './shared/skills';
+import { coreSkills, skills } from '../../shared/skills';
 
 const LogoTextStyle = () => {
   return (

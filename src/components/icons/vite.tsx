@@ -9,8 +9,8 @@ export const ViteIcon = (props: SVGProps<SVGSVGElement>) => (
     fill="#000000"
     {...props}
   >
-    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+    <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
     <g id="SVGRepo_iconCarrier">
       {' '}
       <defs>
@@ -23,10 +23,10 @@ export const ViteIcon = (props: SVGProps<SVGSVGElement>) => (
           id="linearGradient-1"
         >
           {' '}
-          <stop stop-color="#41D1FF" offset="0%">
+          <stop stopColor="#41D1FF" offset="0%">
             {' '}
           </stop>{' '}
-          <stop stop-color="#BD34FE" offset="100%">
+          <stop stopColor="#BD34FE" offset="100%">
             {' '}
           </stop>{' '}
         </linearGradient>{' '}
@@ -38,13 +38,13 @@ export const ViteIcon = (props: SVGProps<SVGSVGElement>) => (
           id="linearGradient-2"
         >
           {' '}
-          <stop stop-color="#FFEA83" offset="0%">
+          <stop stopColor="#FFEA83" offset="0%">
             {' '}
           </stop>{' '}
-          <stop stop-color="#FFDD35" offset="8.33333%">
+          <stop stopColor="#FFDD35" offset="8.33333%">
             {' '}
           </stop>{' '}
-          <stop stop-color="#FFA800" offset="100%">
+          <stop stopColor="#FFA800" offset="100%">
             {' '}
           </stop>{' '}
         </linearGradient>{' '}
