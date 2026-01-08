@@ -44,17 +44,19 @@ export const Navbar = () => {
                 </a>
               ))}
             </div>
-            <MenuButton menuClassName="w-max dark:border-gray-800/80 dark:bg-zinc-950">
-              {navItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="block w-full rounded-sm px-8 py-2 text-gray-800 transition-colors hover:bg-gray-100 dark:border-0 dark:text-gray-300 dark:hover:bg-zinc-900"
-                >
-                  {item.name}
-                </a>
-              ))}
-            </MenuButton>
+            <span className="md:hidden">
+              <MenuButton menuClassName=" w-max dark:border-gray-800/80 dark:bg-zinc-950">
+                {navItems.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="block w-full rounded-sm px-8 py-2 text-gray-800 transition-colors hover:bg-gray-100 dark:border-0 dark:text-gray-300 dark:hover:bg-zinc-900"
+                  >
+                    {item.name}
+                  </a>
+                ))}
+              </MenuButton>
+            </span>
             <ThemeButton />
           </div>
         </nav>
